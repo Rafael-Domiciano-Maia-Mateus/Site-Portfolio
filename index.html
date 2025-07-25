@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rafael Domiciano Maia Mateus | Portfólio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="particulas"></div>
+
+        <nav class="navegacao">
+            <ul class="menu">
+                <li>
+                    <a href="#home" class="menu-link">Início</a>
+                </li>
+                <li>
+                    <a href="#about" class="menu-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projects" class="menu-link">Projetos</a>
+                </li>
+                <li>
+                    <a href="#phone" class="menu-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="cabecalho" id="home">
+            <img src="./img/Rafael.png" alt="Foto de Rafael" class="foto-perfil" />
+            <h1>Rafael Domiciano Maia Mateus</h1>
+            <p class="subtitle">Desenvolvedor Back End</p>
+        </main>
+
+        <section id="about" class="about">
+            <h2 class="about-title">Sobre Mim</h2>
+            <div class="about-box">
+                <p class="about-paragraph">
+                    Olá! Sou um desenvolvedor backend apaixonado por criar soluções eficientes, seguras e escaláveis. Gosto de transformar ideias em
+                    sistemas robustos que sustentam aplicações modernas. Escrevo código limpo e bem estruturado para garantir que tudo funcione
+                    perfeitamente nos bastidores, com foco em performance, organização e confiabilidade.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Meus Projetos</h2>
+            <div class="project-box">
+                <div class="projects-card">
+                    <img src="./img/project1.png" alt="Projeto 1" class="project-img" />
+                    <div class="box-text-project">
+                        <h3 class="info-projects">Reserva Brasil</h3>
+                        <p class="paragraph-projects">Projeto de hospedagem com design suave e funcionalidades avançadas feito com Python (django)</p>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <img src="./img/project2.png" alt="Projeto 1" class="project-img" />
+                    <div class="box-text-project">
+                        <h3 class="info-projects">Flappy Bird</h3>
+                        <p class="paragraph-projects">Um jogo classico feito com Python (pygame)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="phone" id="phone">
+            <h2 class="phone-title">Contato</h2>
+            <form class="form-phone" id="form" onsubmit="enviarWhats(event)">
+                <div class="name-form">
+                    <input type="text" class="box-form" id="name" placeholder="Nome" />
+                    <textarea class="box-form" id="message" rows="8" placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="button-form">Enviar Whatsapp</button>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
