@@ -171,6 +171,14 @@ h1 {
     margin: 0 auto;
 }
 
+.link-project {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
 .projects-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -255,6 +263,38 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
+.rodape {
+    background-color: var(--maisEscuro);
+    color: var(--claro);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 1px solid var(--vidro);
+    font-size: 1.1rem;
+}
+
+.rodape-link {
+    color: var(--claro);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.rodape-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.3s ease;
+}
+
+.rodape-link:hover::after {
+    width: 100%;
+}
+
 @keyframes flutuar {
     0%,
     100% {
@@ -263,5 +303,85 @@ h1 {
 
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .about,
+    .projects,
+    .certificados {
+        padding: 4rem 2rem;
+    }
+
+    .project-box {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--maisEscuro);
+        width: 100%;
+        padding: 2rem 0;
+        transition: right 0.3s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .menu-link {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .cabecalho {
+        padding: 4rem 1rem;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle,
+    .about-paragraph {
+        font-size: 1.3rem;
+    }
+
+    .form-phone {
+        padding: 1.5rem;
+    }
+
+    .button-form {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
