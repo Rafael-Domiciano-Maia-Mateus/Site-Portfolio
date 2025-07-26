@@ -55,7 +55,7 @@ body {
 }
 
 .menu-link::after {
-    content: '';
+    content: "";
     height: 2px;
     width: 0;
     position: absolute;
@@ -113,8 +113,9 @@ h1 {
 }
 
 .about-paragraph {
-    text-align: center;
+    text-align: justify;
     font-size: 1.5rem;
+    line-height: 2.3rem;
 }
 
 .certificados {
@@ -281,7 +282,7 @@ h1 {
 }
 
 .rodape-link::after {
-    content: '';
+    content: "";
     height: 2px;
     width: 0;
     position: absolute;
