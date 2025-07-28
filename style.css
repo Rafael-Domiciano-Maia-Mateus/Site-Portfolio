@@ -55,7 +55,7 @@ body {
 }
 
 .menu-link::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 0;
     position: absolute;
@@ -282,7 +282,7 @@ h1 {
 }
 
 .rodape-link::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 0;
     position: absolute;
@@ -294,6 +294,29 @@ h1 {
 
 .rodape-link:hover::after {
     width: 100%;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
 }
 
 @keyframes flutuar {
