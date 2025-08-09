@@ -57,7 +57,7 @@ body {
 }
 
 .menu-link::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 0;
     position: absolute;
@@ -292,7 +292,7 @@ h1 {
 }
 
 .rodape-link::after {
-    content: "";
+    content: '';
     height: 2px;
     width: 0;
     position: absolute;
@@ -346,7 +346,7 @@ h1 {
     }
 
     .navegacao {
-        padding: 1rem;
+        background-color: transparent;
     }
 
     .about,
