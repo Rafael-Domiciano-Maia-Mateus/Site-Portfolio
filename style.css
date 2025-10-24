@@ -352,6 +352,29 @@ h1 {
     transform: scale(1.1);
 }
 
+.email-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.email-icon:hover {
+    transform: scale(1.1);
+}
+
 @keyframes flutuar {
     0%,
     100% {
