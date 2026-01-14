@@ -17,3 +17,17 @@ function enviarWhats(event) {
 
     window.open(url, '_blank');
 }
+
+document.querySelectorAll('.paragraph-projects').forEach((paragraph) => {
+    const readMore = paragraph.nextElementSibling;
+
+    if (paragraph.scrollHeight > paragraph.clientHeight) {
+        readMore.style.display = 'inline-block';
+    }
+
+    readMore.addEventListener('click', () => {
+        paragraph.classList.toggle('expanded');
+
+        readMore.textContent = paragraph.classList.contains('expanded') ? 'menos' : 'mais...';
+    });
+});
